@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Address Book</title>
+  </head>
+  <body>
+    {% if contacts is not empty %}
+      <p>Here are a list of your contacts:</p>
+      <ul>
+        {% for contact in contacts %}
+        <li>{{ contact.getName }}</li>
+        <ul>
+          <li>{{ contact.getPhoneNumber }}</li>
+          <li>{{ contact.getAddress }}</li>
+        </ul>
+        {% endfor %}
+      </ul>
+    {% else %}
+    <p>You have no contacts yet! Please fill out the form to add a contact!</p>
+    {% endif %}
+  </body>
+</html>
