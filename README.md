@@ -1,14 +1,14 @@
-# _{Address Book}_
+# _Address Book_
 
-##### _{Allows users to input contact info into an address book}, {8/7/15}_
+##### _Allows users to input contact info into an address book, 8/7/15_
 
-#### By _**{Casey Heitz}**_
+#### By _**Casey Heitz**_
 
 ## Description
 
-_{In this app, users can submit contact information consisting of a name, phone, and address.  The contact
+_In this app, users can submit contact information consisting of a name, phone, and address.  The contact
   information will be stored using cookies.  The main page will show a list of all contacts, along with a form
-  to add another contact.  Also, users have to ability to hit a button to delete all current contacts saved.}_
+  to add another contact.  Also, users have to ability to hit a button to delete all current contacts saved._
 
 ## Setup
 
@@ -16,11 +16,11 @@ _{In this app, users can submit contact information consisting of a name, phone,
 
 ## Technologies Used
 
-_{Silex 1.1 and Twig 1.0}_
+_Silex 1.1 and Twig 1.0_
 
 ### Legal
 
-Copyright (c) 2015 **_{Casey Heitz}_**
+Copyright (c) 2015 **_Casey Heitz_**
 
 This software is licensed under the MIT license.
 
