@@ -5,6 +5,7 @@
   </head>
   <body>
     <h1>Address Book</h1>
+{# if state to check if there are already contacts, and if so, to list them #}
     {% if contacts is not empty %}
       <h3>Here are a list of your contacts:</h3>
       <ul>
@@ -17,8 +18,10 @@
         {% endfor %}
       </ul>
     {% else %}
+{# the else statement will make this message display if there are no contacts inputted yet #}
     <h3>You have no contacts yet! Please fill out the form to add a contact!</h3>
     {% endif %}
+{# form to post the new contact information #}
       <form action='/contacts' method='post'>
         <div class='form-group'>
           <label for='name'>Contact name:</label>
@@ -31,6 +34,7 @@
         <button type='submit' class='btn'>Submit!</button>
       </form>
       <form action='/delete_contacts' method='post'>
+{# button to delete all existing contacts #}
         <button type='submit'>Delete all contacts</button>
       </form>
   </body>
