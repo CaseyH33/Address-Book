@@ -42,6 +42,7 @@
       $this->address = $new_address;
     }
 
+//pushes new contact into the list_of_contacts array, therefore saving it
     function save()
     {
       array_push($_SESSION['list_of_contacts'], $this);
@@ -52,6 +53,7 @@
       return $_SESSION['list_of_contacts'];
     }
 
+//sets list_of_contacts to a blank array, erasing all current contacts
     static function deleteAll()
     {
       $_SESSION['list_of_contacts'] = array();
