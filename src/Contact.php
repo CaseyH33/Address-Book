@@ -24,7 +24,7 @@
 
     function getPhoneNumber()
     {
-      return $this->$phone_number;
+      return $this->phone_number;
     }
 
     function setPhoneNumber($new_number)

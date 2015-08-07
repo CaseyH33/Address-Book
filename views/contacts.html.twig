@@ -1,10 +1,12 @@
 <html>
   <head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
     <title>Address Book</title>
   </head>
   <body>
+    <h1>Address Book</h1>
     {% if contacts is not empty %}
-      <p>Here are a list of your contacts:</p>
+      <h3>Here are a list of your contacts:</h3>
       <ul>
         {% for contact in contacts %}
         <li>{{ contact.getName }}</li>
@@ -15,7 +17,21 @@
         {% endfor %}
       </ul>
     {% else %}
-    <p>You have no contacts yet! Please fill out the form to add a contact!</p>
+    <h3>You have no contacts yet! Please fill out the form to add a contact!</h3>
     {% endif %}
+      <form action='/contacts' method='post'>
+        <div class='form-group'>
+          <label for='name'>Contact name:</label>
+          <input id='name' name='name' class='form-control' type='text'>
+          <label for='phone_number'>Contact phone number:</label>
+          <input id='phone_number' name='phone_number' class='form-control' type='text'>
+          <label for='address'>Contact address:</label>
+          <input id='address' name='address' class='form-control' type='text'>
+        </div>
+        <button type='submit' class='btn'>Submit!</button>
+      </form>
+      <form action='/delete_contacts' method='post'>
+        <button type='submit'>Delete all contacts</button>
+      </form>
   </body>
 </html>
